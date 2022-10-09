@@ -124,6 +124,7 @@ function Home() {
                 key={movie.id}
                 id={movie.id}
                 medium_cover_image={movie.medium_cover_image}
+                title={movie.title}
               />
             ))}
           </Slider>
