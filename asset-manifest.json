@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-app2/static/css/main.6321f216.css",
-    "main.js": "/react-app2/static/js/main.5f4922c6.js",
-    "static/media/slick.svg": "/react-app2/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/react-app2/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/react-app2/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/react-app2/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/react-app2/index.html",
-    "main.6321f216.css.map": "/react-app2/static/css/main.6321f216.css.map",
-    "main.5f4922c6.js.map": "/react-app2/static/js/main.5f4922c6.js.map"
+    "main.css": "/MovieRanking/static/css/main.974b676b.css",
+    "main.js": "/MovieRanking/static/js/main.5f4922c6.js",
+    "static/media/slick.svg": "/MovieRanking/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MovieRanking/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MovieRanking/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MovieRanking/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MovieRanking/index.html",
+    "main.974b676b.css.map": "/MovieRanking/static/css/main.974b676b.css.map",
+    "main.5f4922c6.js.map": "/MovieRanking/static/js/main.5f4922c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.6321f216.css",
+    "static/css/main.974b676b.css",
     "static/js/main.5f4922c6.js"
   ]
 }
