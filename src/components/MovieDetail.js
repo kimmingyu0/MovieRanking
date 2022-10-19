@@ -1,45 +1,27 @@
-import style from "./MovieDetail.module.css";
-import { Link } from "react-router-dom";
+import "../css/MovieDetail.css";
 import PropTypes from "prop-types";
 import React from "react";
 
-function MovieDetail({
-  medium_cover_image,
-  title,
-  genres,
-  year,
-  description,
-}) {
+function MovieDetail({ medium_cover_image, title, genres, year, description }) {
   return (
     <React.Fragment>
-      <div className={style.all}>
-        <div>
-          <img
-            src={medium_cover_image}
-            alt={title}
-            className={style.DetailImg}
-          />
+      <div id="detail-body">
+        <div id="cover-img">
+          <img src={medium_cover_image} alt={title} />
         </div>
-        <div className={style["info-body"]}>
-          <h2>{title}</h2>
-          <div className={style.description}>
+        <div id="info-body">
+          <div id="title">
+            <span>{title}</span>
+          </div>
+          <div id="genres">
+            <h4>장르</h4>
+            <div>{genres.map((item) => `${item}`).join(`/`)}</div>
+            <h4>출시년도</h4>
+            <p>{year}</p>
+          </div>
+          <div id="description">
             <div>{description}</div>
           </div>
-
-          <h2>장르</h2>
-          <ul>
-            {genres.map((g) => (
-              <li key={g}>{g}</li>
-            ))}
-          </ul>
-          <h2>출시년도</h2>
-          <p>{year}</p>
-
-          <p>
-            <Link to={"/"}>
-              <button>돌아가기</button>
-            </Link>
-          </p>
         </div>
       </div>
     </React.Fragment>
@@ -47,7 +29,6 @@ function MovieDetail({
 }
 
 MovieDetail.propTypes = {
-
   medium_cover_image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,

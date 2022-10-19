@@ -1,21 +1,23 @@
 import PropTypes from "prop-types";
+import React from "react";
 import { Link } from "react-router-dom";
-import style from "../Movie.module.css";
+import "../css/Movie.css";
 
 function Movie({ id, medium_cover_image, title }) {
   return (
-    <div className={style.MainBox}>
-      <div className={style.card}>
-        <div className={style.cardimage}>
-          <img src={medium_cover_image} alt={title} className={style.MainImg} />
-        </div>
-        <div className={style.DetailBoard}>
-          <Link to={`/movie/${id}`}  style={{ textDecoration: 'none' }}>
-            <button>상세정보</button>
-          </Link>
-        </div>
+    <React.Fragment>
+    <div key={id} id="movie-box">
+      <div>
+        <Link to={`/movie/${id}`}>
+          <img
+            style={{ borderRadius: "10px" }}
+            src={medium_cover_image}
+            alt={title}
+          />
+        </Link>
       </div>
     </div>
+    </React.Fragment>
   );
 }
 

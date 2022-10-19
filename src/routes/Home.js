@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loading from "../UI/Loading";
+import "../css/Home.css"
 
 function Home() {
   function NextArrow(props) {
@@ -14,7 +15,7 @@ function Home() {
         style={{
           ...style,
           display: "block",
-          background: "black",
+          background: "transparent",
           right: "30px",
         }}
         onClick={onClick}
@@ -30,7 +31,7 @@ function Home() {
         style={{
           ...style,
           display: "block",
-          background: "black",
+          background: "transparent",
           left: "30px",
           zIndex: "999",
         }}
@@ -88,13 +89,13 @@ function Home() {
       {
         breakpoint: 950,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 690,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -112,22 +113,26 @@ function Home() {
   };
 
   return (
-    <div>
+    <div id="home">
       {loading ? (
         <Loading />
       ) : (
-        <div>
-          <h1>Movie Ranking</h1>
-          <Slider {...settings}>
-            {movies.map((movie) => (
-              <Movie
-                key={movie.id}
-                id={movie.id}
-                medium_cover_image={movie.medium_cover_image}
-                title={movie.title}
-              />
-            ))}
-          </Slider>
+        <div id="home-body">
+          <div id="home-title">
+            <h1>Movie Information</h1>
+          </div>
+          <div id="home-movie">
+            <Slider {...settings}>
+              {movies.map((movie) => (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  medium_cover_image={movie.medium_cover_image}
+                  title={movie.title}
+                />
+              ))}
+            </Slider>
+          </div>
         </div>
       )}
     </div>
