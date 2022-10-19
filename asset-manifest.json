@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MovieRanking/static/css/main.d25ced55.css",
-    "main.js": "/MovieRanking/static/js/main.38b0a66e.js",
+    "main.css": "/MovieRanking/static/css/main.a42e4a77.css",
+    "main.js": "/MovieRanking/static/js/main.d13c07f2.js",
     "static/media/slick.svg": "/MovieRanking/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/MovieRanking/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/MovieRanking/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MovieRanking/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MovieRanking/index.html",
-    "main.d25ced55.css.map": "/MovieRanking/static/css/main.d25ced55.css.map",
-    "main.38b0a66e.js.map": "/MovieRanking/static/js/main.38b0a66e.js.map"
+    "main.a42e4a77.css.map": "/MovieRanking/static/css/main.a42e4a77.css.map",
+    "main.d13c07f2.js.map": "/MovieRanking/static/js/main.d13c07f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d25ced55.css",
-    "static/js/main.38b0a66e.js"
+    "static/css/main.a42e4a77.css",
+    "static/js/main.d13c07f2.js"
   ]
 }
