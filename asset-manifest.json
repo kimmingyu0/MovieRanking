@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MovieRanking/static/css/main.c31da70b.css",
+    "main.css": "/MovieRanking/static/css/main.dcdd93d5.css",
     "main.js": "/MovieRanking/static/js/main.b64cb078.js",
     "static/media/bgimg.jpg": "/MovieRanking/static/media/bgimg.20f736e5e76d9f05e4b6.jpg",
     "static/media/slick.svg": "/MovieRanking/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -8,11 +8,11 @@
     "static/media/slick.ttf": "/MovieRanking/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MovieRanking/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MovieRanking/index.html",
-    "main.c31da70b.css.map": "/MovieRanking/static/css/main.c31da70b.css.map",
+    "main.dcdd93d5.css.map": "/MovieRanking/static/css/main.dcdd93d5.css.map",
     "main.b64cb078.js.map": "/MovieRanking/static/js/main.b64cb078.js.map"
   },
   "entrypoints": [
-    "static/css/main.c31da70b.css",
+    "static/css/main.dcdd93d5.css",
     "static/js/main.b64cb078.js"
   ]
 }
