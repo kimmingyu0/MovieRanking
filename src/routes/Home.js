@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loading from "../UI/Loading";
-import "../css/Home.css"
+import "../css/Home.css";
 
 function Home() {
   function NextArrow(props) {
@@ -89,7 +89,7 @@ function Home() {
       {
         breakpoint: 950,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -111,30 +111,37 @@ function Home() {
       },
     ],
   };
-
+  let page;
+  if (loading) {
+    page = (
+      <div className="centered">
+        <Loading />
+      </div>
+    );
+  } else {
+    page = (
+      <div id="home-body">
+        <div id="home-title">
+          <h1>Movie Information</h1>
+        </div>
+        <div id="home-movie">
+          <Slider {...settings}>
+            {movies.map((movie) => (
+              <Movie
+                key={movie.id}
+                id={movie.id}
+                medium_cover_image={movie.medium_cover_image}
+                title={movie.title}
+              />
+            ))}
+          </Slider>
+        </div>
+      </div>
+    );
+  }
   return (
     <div id="home">
-      {loading ? (
-        <Loading />
-      ) : (
-        <div id="home-body">
-          <div id="home-title">
-            <h1>Movie Information</h1>
-          </div>
-          <div id="home-movie">
-            <Slider {...settings}>
-              {movies.map((movie) => (
-                <Movie
-                  key={movie.id}
-                  id={movie.id}
-                  medium_cover_image={movie.medium_cover_image}
-                  title={movie.title}
-                />
-              ))}
-            </Slider>
-          </div>
-        </div>
-      )}
+      {page}
     </div>
   );
 }

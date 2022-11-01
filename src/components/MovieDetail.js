@@ -1,10 +1,24 @@
 import "../css/MovieDetail.css";
-import PropTypes from "prop-types";
 import React from "react";
 
-function MovieDetail({ medium_cover_image, title, genres, year, description }) {
+function MovieDetail({
+  medium_cover_image,
+  bgImg,
+  title,
+  genres,
+  year,
+  description,
+}) {
   return (
-    <React.Fragment>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage: `url('${bgImg}')`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div id="detail-body">
         <div id="cover-img">
           <img src={medium_cover_image} alt={title} />
@@ -24,15 +38,8 @@ function MovieDetail({ medium_cover_image, title, genres, year, description }) {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
-
-MovieDetail.propTypes = {
-  medium_cover_image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
-  year: PropTypes.number.isRequired,
-};
 
 export default MovieDetail;

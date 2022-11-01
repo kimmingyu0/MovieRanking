@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
-    margin: 0;
+  margin: 0;
+  background-color: rgb(38, 38, 38);
 }
-#home{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    margin: 0 auto;
+#home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
 }
 
 #home-movie {
@@ -19,20 +20,23 @@ body {
 
 #home-title {
   width: 100vw;
-  height: 400px;
-  color: black;
+  height: 410px;
+  color: #fff;
   text-align: center;
   font-size: 2em;
   padding-top: 50px;
   box-sizing: border-box;
+  background-image: url("../img/bgimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Bebas Neue", cursive;
-  text-shadow: 2px 2px 2px black;
   opacity: 1;
+  text-shadow: 2px 2px 2px #000;
 }
 
 @media all and (max-width: 767px) {
-  #home{
-    overflow-x: hidden;
+  #home {
+    overflow: hidden;
   }
   #home-body {
     text-align: center;
@@ -40,7 +44,7 @@ body {
 
   #home-movie {
     position: absolute;
-    top: 250px;
+    top: 200px;
 
     left: 18%;
   }

@@ -20,23 +20,34 @@ function Detail() {
     getMovie();
   }, []);
 
+  let page;
+
+  if (loading) {
+    page = (
+      <div className="centered">
+        <Loading />
+      </div>
+    );
+  } else {
+    page = (
+      <div>
+        <MovieDetail
+          key={movies.id}
+          id={movies.id}
+          medium_cover_image={movies.medium_cover_image}
+          bgImg={movies.background_image}
+          title={movies.title}
+          description={movies.description_full}
+          genres={movies.genres}
+          year={movies.year}
+        />
+      </div>
+    );
+  }
+
   return (
     <div>
-      {loading ? (
-        <Loading/>
-      ) : (
-        <div>
-          <MovieDetail
-            key={movies.id}
-            id={movies.id}
-            medium_cover_image={movies.medium_cover_image}
-            title={movies.title}
-            description={movies.description_full}
-            genres={movies.genres}
-            year={movies.year}
-          />
-        </div>
-      )}
+      {page}
     </div>
   );
 }
